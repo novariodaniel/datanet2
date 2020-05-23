@@ -1,0 +1,16 @@
+#port where service shall LISTEN for connection
+listenPort: :8280
+
+#database configuration
+query: ./query/db_query.yml
+dbType: mysql
+dbUrl: daniel:@tcp(localhost:3306)/sftp_datanet
+#dbUrl: root:@tcp(localhost:3306)/payment
+# zsmartPath: http://10.0.0.188:9400
+# zsmartUserName: admin
+# zsmartPassword: 0192023A7BBD73250516F069DF18B500
+# zsmartRequestID: 1122334455
+#logging settings
+log:
+  filename:
+  level: DEBUG
